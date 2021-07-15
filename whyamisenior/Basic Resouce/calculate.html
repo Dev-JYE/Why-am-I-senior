@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/calculator.css">
+<title>학점 계산기</title>
+</head>
+<script>
+    function addRow(){
+        var objrow=document.all('cal_semester').insertRow();
+        var objCell_semester=objrow.insertCell();
+        var objCell_gyopil=objrow.insertCell();
+        var objCell_jeonpil=objrow.insertCell();
+        var objCell_jeonselect=objrow.insertCell();
+        var objCell_gyoyang=objrow.insertCell();
+        var objCell_bokpil=objrow.insertCell();
+        var objCell_bokselect=objrow.insertCell();
+        objCell_semester.innerHTML="<input type='text' list='semester' style='width:70px'></th> <datalist id='semester'><option value='1-1'> <option value='1-2'><option value='2-1'> <option value='2-2'><option value='3-1'><option value='3-2'><option value='4-1'><option value='4-2'></option></datalist>"
+        objCell_gyopil.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+        objCell_jeonpil.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+        objCell_jeonselect.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+        objCell_gyoyang.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+        objCell_bokpil.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+        objCell_bokselect.innerHTML="<input type='number' min='0' max='4.5' step='0.5'>"
+    }
+
+    function sum_table(){
+        var sumt=new Array();
+        var gyopilv=document.getElementById('gyopil').value;
+        var jeonpilv=document.getElementById('jeonpil').value;
+        var jeonselectv=document.getElementById('jeonselect').value;
+        var gyoyangv=document.getElementById('gyoyang').value;
+        var bokpilv=document.getElementById('bokpil').value;
+        var bokselectv=document.getElementById('bokselect').value;
+        var total_table=parseInt(gyopilv)+parseInt(jeonpilv)+parseInt(jeonselectv)+parseInt(gyoyangv)+parseInt(bokpilv)+parseInt(bokselectv);
+        document.write('total_table');
+    }
+</script>
+<body>
+    <section id="result">
+        <div class="wrapper">
+            <div class="title">
+                <img class="clock_img" src="img/border.png" alt="background">
+                <div class="title_img">
+                    <img src="img/logo.png" alt="수업만 들었는데 졸업반">
+                </div>
+            </div>
+        <div class="result_table">
+            <table>
+                <caption>학점 계산기</caption>
+                <thead>
+                    <tr><th> 학기</th><th>교양 필수</th><th>전공 필수</th><th>전공 선택</th><th>교양</th><th>복전 필수</th><th>복전 선택</th><th>평점</th></tr>
+                </thead>
+                <tbody id="cal_semester">
+                    <tr><td><input type="text" list="semester" style='width:70px'>
+                    <datalist id="semester">
+                        <option value="1-1">
+                        <option value="1-2">
+                        <option value="2-1">
+                        <option value="2-2">
+                        <option value="3-1">
+                        <option value="3-2">
+                        <option value="4-1">
+                        <option value="4-2"></option>
+                    </datalist></td>
+                    <td><input id="gyopil"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td><input id="jeonpil"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td><input id="jeonselect"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td><input id="gyoyang"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td><input id="bokpil"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td><input id="bokselect"type='number' min='0' max='4.5' step='0.5'></td>
+                    <td></td>
+                    <td><input type='button' value='추가' onclick='addRow()' style="height:25px"></td>
+
+                </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </section>
+</body>
+</html>
