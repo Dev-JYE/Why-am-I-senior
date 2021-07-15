@@ -1,3 +1,4 @@
+![수업만 들었는데 졸업반 웹페이지 디자인으로 미리 만들어보기-003](https://user-images.githubusercontent.com/67950316/125794304-bc79b80a-795b-48ee-9b45-4972a9adc75c.png)
 # Why-am-I-senior
 
 제주 코딩 베이스캠프의 '1만 시간의 법칙'웹페이지 제작하기 강의를 참고했습니다.
