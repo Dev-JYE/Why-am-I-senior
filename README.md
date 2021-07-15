@@ -1,4 +1,5 @@
-![수업만 들었는데 졸업반 웹페이지 디자인으로 미리 만들어보기-003 (1)](https://user-images.githubusercontent.com/67950316/125794589-6610e531-f011-47ae-bb34-6c69763e85b4.png)
+![수업만 들었는데 졸업반 웹페이지 디자인으로 미리 만들어보기-003 (1) (1)](https://user-images.githubusercontent.com/67950316/125795651-201e1fc3-0b34-4398-a9b2-e66d8d630688.png)
+
 
 # Why-am-I-senior
 
